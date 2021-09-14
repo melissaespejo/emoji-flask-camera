@@ -1,0 +1,39 @@
+{% extends './base.html' %}
+
+{% block title%} Index {% endblock%}
+
+{% block body %}
+<!--<h1> 😁 ☹️  😠  😲  😐  </h1>-->
+<section class="section">
+    <div class="columns">
+        <div class="polaroid">
+            <figure class="image">
+                <img class="camera" src="./mostrarCamara">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- Link trigger modal -->
+<button type="button" data-toggle="modal" data-target="#myModal" class="btn-primary">
+   Verificar
+</button>
+
+<!-- Default bootstrap modal example -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
